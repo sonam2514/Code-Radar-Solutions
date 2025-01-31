@@ -2,7 +2,14 @@
 int main() {
     int n;
     scanf("%d", &n);
-    if(n>1 && n%1==0 && n%n==0){
+    int a=0
+    for(int i=2;i<=n-1;n++){
+        if(n%i==0){
+            a=1;
+            break;
+        }
+    }
+    if(a==0){
         printf("Prime");
     }
     else{
