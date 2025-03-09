@@ -1,6 +1,6 @@
 // Your code here...
 #include <stdio.h>
-void fibbonacciSeries(int n){
+void fibonacciSeries(int n){
     int a=0,b=1,sum;
     for(int i=1;i<=n;i++){
         printf("%d",a);
