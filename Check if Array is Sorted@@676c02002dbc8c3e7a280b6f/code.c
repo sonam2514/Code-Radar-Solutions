@@ -7,13 +7,22 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int issorted=1;
+    int allequal=1;
     for(int i=0;i<n-1;i++){
         if(arr[i]>=arr[i+1]){
             issorted=0;
             break;
-        }  
+        } 
+        if(arr[i]!=arr[i+1]){
+            allequal=0;
+            break;
+        } 
     }
+
     if(issorted){
+        printf("Sorted");
+    }
+    else if(allequal){
         printf("Sorted");
     }
     else{
