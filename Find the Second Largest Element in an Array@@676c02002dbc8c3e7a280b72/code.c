@@ -9,7 +9,11 @@ int main(){
     }
     int max=INT_MIN;
     int smax=INT_MIN;
+    if(n<2 ){
+        printf("-1");
+    }
     for(int i=0;i<n;i++){
+        
         if(arr[i]>max){
             smax=max;
             max=arr[i];
@@ -17,6 +21,7 @@ int main(){
         else if(arr[i]>smax && arr[i]!= max){
             smax=arr[i];
         }
+
     }
     printf("%d",smax);
     return 0;
