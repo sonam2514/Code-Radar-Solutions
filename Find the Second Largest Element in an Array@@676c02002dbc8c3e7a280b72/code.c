@@ -11,6 +11,7 @@ int main(){
     int smax=INT_MIN;
     if(n<2 ){
         printf("-1");
+        return -1;
     }
     for(int i=0;i<n;i++){
         
@@ -23,6 +24,11 @@ int main(){
         }
 
     }
-    printf("%d",smax);
+    if(smax==INT_MIN){
+        printf("-1");
+        return -1;
+    }
+    else 
+        printf("%d",smax);
     return 0;
 }
