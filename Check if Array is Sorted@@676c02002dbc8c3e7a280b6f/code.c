@@ -7,18 +7,18 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int issorted=1;
-    int allequal=1;
+    // int allequal=1;
     int dec=1;
     for(int i=0;i<n-1;i++){
         if(arr[i]>arr[i+1]){
             issorted=0;
             
         } 
-        if(arr[i]!=arr[i+1]){
-            allequal=0;
+        // if(arr[i]!=arr[i+1]){
+        //     allequal=0;
             
-        } 
-        if(arr[i]<arr[i+1]){
+        // } 
+        else if(arr[i]<arr[i+1]){
             dec=0;
             
         }
@@ -27,7 +27,7 @@ int main(){
     if(issorted){
         printf("Sorted");
     }
-    else if(allequal){
+    else if(issorted && dec){
         printf("Sorted");
     }
     else if(dec){
