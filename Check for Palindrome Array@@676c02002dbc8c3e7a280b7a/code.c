@@ -5,9 +5,9 @@ int palindrome(int arr[],int n){
     while(i<j){
         if(arr[i]!= arr[j]){
             return 0;
-            i++;
-            j--;
         }
+        i++;
+        j--;
     }
     return 1;
 }
