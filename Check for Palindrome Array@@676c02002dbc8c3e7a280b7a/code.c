@@ -9,7 +9,7 @@ int palindrome(int arr[],int n){
             j--;
         }
     }
-    return 0;
+    return 1;
 }
 int main(){
     int n;
