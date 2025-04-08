@@ -12,6 +12,9 @@ int main(){
         if(arr[i]==target){
             printf("%d",i);
         }
+        else{
+            printf("-1");
+        }
     }
-    return -1;
+    return 0;
 }
