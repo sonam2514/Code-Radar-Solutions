@@ -21,7 +21,7 @@ int main(){
         if(arr[i]==arr[i+1]){
             continue;
         }
-        else if(arr[i]==arr[i+1]+1){
+        else if(arr[i]==arr[i-1]+1){
             current++;
         }
         else{
@@ -34,6 +34,6 @@ int main(){
     if(current>longest){
         longest=current;
     }
-    printf("%d",current);
+    printf("%d",longest);
     return 0;
 }
