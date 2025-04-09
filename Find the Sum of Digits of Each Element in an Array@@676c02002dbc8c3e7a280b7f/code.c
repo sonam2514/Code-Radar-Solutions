@@ -6,12 +6,14 @@ int main(){
    for(int i=0;i<n;i++){
     scanf("%d",&arr[i]);
    } 
-   int sum=0;
+   
    for(int i=0;i<n;i++){
-    while(arr[i]>0){
-        int digit=arr[i]%10;
+    int sum=0;
+    int temp=arr[i];
+    while(temp>0){
+        int digit=temp%10;
         sum+=digit;
-        arr[i]=arr[i]/10;
+        temp=temp/10;
     }
     printf("%d ",sum);
 
