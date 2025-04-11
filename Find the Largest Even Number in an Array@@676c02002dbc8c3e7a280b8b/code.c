@@ -9,17 +9,16 @@ int main(){
     int largest=-1;
     int found =0;
     for(int i=0;i<n;i++){
-        if(arr[i]%2==0 > largest){
+        if(arr[i]%2==0 && arr[i]>largest){
             largest=arr[i];
             found=1;
         }
-        if(found){
-        largest=arr[i];
+    }
+    if(found){
         printf("%d",largest);
     }
     else{
         printf("-1");
-    }
     }
     
     return 0;
