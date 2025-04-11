@@ -8,26 +8,17 @@ int main(){
     }
     int target;
     scanf("%d",&target);
-    int a=0;
-    int b=0;
+    
     int found =0;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==target){
-                a=arr[i];
-                b=arr[j];
-                found =1;
-                break;
+                found++
+                printf("%d %d\n",arr[i],arr[j]);
             }
             if(found) break;
         }
 
     }
-    if(found){
-        printf("%d %d\n",a,b);
-    }
-    else{
-        printf(" ");
-    }
-    return 0;
+   return 0;
 }
