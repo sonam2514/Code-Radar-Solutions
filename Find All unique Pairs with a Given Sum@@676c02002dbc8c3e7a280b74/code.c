@@ -16,7 +16,6 @@ int main(){
                 found++;
                 printf("%d %d\n",arr[i],arr[j]);
             }
-            if(found) break;
         }
 
     }
