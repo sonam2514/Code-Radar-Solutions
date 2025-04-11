@@ -9,15 +9,14 @@ int main(){
     int target;
     scanf("%d",&target);
     for(int i=0;i<n;i++){
-        for(int j=0;j=n-i-1;j++){
+        for(int j=0;j<n-i-1;j++){
             if(arr[j]>arr[j+1]){
                 int temp=arr[j];
                 arr[j]=arr[j+1];
                 arr[j+1]=temp;
             }
         }
-    }
-    
+    } 
     int found =0;
     for(int i=0;i<n;i++){
         if(i>0 && arr[i]==arr[i-1]) continue;
