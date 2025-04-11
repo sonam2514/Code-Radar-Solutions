@@ -7,6 +7,9 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    if(n<2){
+        printf("-1");
+    }
     int mindiff= abs(arr[0]-arr[1]);
     int a= arr[0];
     int b=arr[1];
