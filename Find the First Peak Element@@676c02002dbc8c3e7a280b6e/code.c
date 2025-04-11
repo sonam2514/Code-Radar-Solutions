@@ -10,7 +10,7 @@ int main(){
         if(arr[i]<arr[i+1]){
             if(arr[i]==arr[i+1]){
                 printf("-1");
-                break;
+                return 0;
             }
             printf("%d",arr[i+1]);
             return 0;
