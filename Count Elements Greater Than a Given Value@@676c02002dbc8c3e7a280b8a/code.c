@@ -9,15 +9,12 @@ int main(){
     int k;
     scanf("%d",&k);
     int count =0;
-    
     for(int i=0;i<n;i++){
         if(arr[i]>k){
             count++;
            
         }
     }
-    if(count >0){
-        printf("%d",count);
-    }
+    printf("%d",count);
     return 0;
 }
