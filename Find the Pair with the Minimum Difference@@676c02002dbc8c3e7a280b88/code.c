@@ -7,9 +7,11 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        if(arr[i]-arr[i+1]<2){
-            printf("%d %d",arr[i],arr[i+1]);
+       for(int j=i+1;j<n;j++){
+        if(arr[i]-arr[j]<2){
+            printf("%d %d",arr[i],arr[j]);
         }
+       }
     }
     return 0;
 }
