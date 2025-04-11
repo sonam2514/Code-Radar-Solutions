@@ -19,7 +19,7 @@ int main(){
             smallest=arr[i];
         }
         else if(arr[i]<smin && arr[i]!= smallest){
-            smax=arr[i];
+            smin=arr[i];
         }
     }
     printf("%d",smin);
