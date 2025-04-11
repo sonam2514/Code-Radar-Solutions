@@ -22,6 +22,11 @@ int main(){
             smin=arr[i];
         }
     }
-    printf("%d",smin);
+    if(smin==INT_MAX){
+        printf("-1");
+    }
+    else{
+        printf("%d",smin);
+    }
     return 0;
 }
