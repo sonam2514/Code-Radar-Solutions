@@ -21,7 +21,7 @@ int main(){
     for(int i=0;i<n;i++){
         if(i>0 && arr[i]==arr[i-1]) continue;
          for(int j=i+1;j<n;j++){
-            if(j>i+1 && arr[j]==arr[j+1]) continue;
+            if(j>i+1 && arr[j]==arr[j-1]) continue;
 
             if(arr[i]+arr[j]==target){
                 found++;
