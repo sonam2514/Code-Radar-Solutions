@@ -13,13 +13,14 @@ int main(){
             largest=arr[i];
             found=1;
         }
-    }
-    if(found){
+        if(found){
         largest=arr[i];
         printf("%d",largest);
     }
     else{
         printf("-1");
     }
+    }
+    
     return 0;
 }
