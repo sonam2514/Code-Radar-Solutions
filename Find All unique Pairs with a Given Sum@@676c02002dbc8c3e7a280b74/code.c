@@ -22,17 +22,12 @@ int main(){
         if(i>0 && arr[i]==arr[i-1]) continue;
          for(int j=i+1;j<n;j++){
             if(j>i+1 && arr[j]==arr[j+1]) continue;
-         }
-    }
-   
-    for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
+
             if(arr[i]+arr[j]==target){
                 found++;
                 printf("%d %d\n",arr[i],arr[j]);
             }
-        }
-
+         }
     }
    return 0;
 }
