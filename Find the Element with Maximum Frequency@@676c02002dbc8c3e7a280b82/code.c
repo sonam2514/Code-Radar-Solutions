@@ -10,11 +10,11 @@ int main(){
     for(int i=0;i<n;i++){
         visited[i]=0;
     }
-    int count =0;
+    int count =1;
     int maxcount=-1;
     int maxelement=arr[0];
     for(int i=0;i<n;i++){
-        if(visited[i]==0){
+        if(visited[i]==1){
             continue;
         }
         for(int j=0;j<n;j++){
@@ -24,6 +24,7 @@ int main(){
             }
         }
         if(count>maxcount){
+            maxcount=count;
             maxelement=arr[i];
         }
         
